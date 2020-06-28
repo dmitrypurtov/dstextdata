@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="инвалидн <= 0.5\ngini = 0.193\nsamples = 3735\nvalue = [3331, 404]", fillcolor="#e89051"] ;
+1 [label="вертет <= 0.5\ngini = 0.193\nsamples = 3734\nvalue = [3331, 403]", fillcolor="#e89051"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="подмышк <= 0.5\ngini = 0.193\nsamples = 3733\nvalue = [3330, 403]", fillcolor="#e89051"] ;
+1 -> 2 ;
+3 [label="портал <= 1.5\ngini = 0.193\nsamples = 3732\nvalue = [3329, 403]", fillcolor="#e89051"] ;
+2 -> 3 ;
+4 [label="кинокорм <= 0.5\ngini = 0.192\nsamples = 3731\nvalue = [3329, 402]", fillcolor="#e89051"] ;
+3 -> 4 ;
+5 [label="пацанк <= 0.5\ngini = 0.192\nsamples = 3730\nvalue = [3328, 402]", fillcolor="#e89051"] ;
+4 -> 5 ;
+6 [label="gini = 0.192\nsamples = 3728\nvalue = [3326, 402]", fillcolor="#e89051"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0]", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]", fillcolor="#e58139"] ;
+4 -> 8 ;
+9 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+3 -> 9 ;
+10 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]", fillcolor="#e58139"] ;
+2 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]", fillcolor="#e58139"] ;
+1 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5"] ;
+0 -> 12 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
